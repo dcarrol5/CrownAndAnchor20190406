@@ -18,16 +18,41 @@ class Face {
         else {
             this._value = faceValue;
         }
+
+        this._betValue = betValue;
+
     }
-    get value() {
-        return this._value;
-    }
-    set imageURL(newimageURL) {
-        this._imageURL = newimageURL |"https://www.bing.com/images/search?q=beach&FORM=HDRSC2";
-    }
-    get imageURL() {
-        return this._imageURL;
+    get betValue() {
+        return this._betValue;
     }
 
-}   
+    set otherValue(otherValue) {
+        if (!isNaN(otherValue) && otherValue >= 0) {
+            this._otherValue;
+            this._betValue = betValue;
+
+        }
+        {
+            get betValue()
+            return this._betValue;
+        }
+
+    }
+
+{
+    get value()
+    return this._value;
+}
+
+
+{
+    set imageURL(newimageURL)
+    this._imageURL = newimageURL | "https://www.bing.com/images/search?q=beach&FORM=HDRSC2";
+}
+
+{
+    get imageURL()
+    return this._imageURL;
+}
+
 module.exports = Face;

@@ -1,14 +1,14 @@
 class Face {
-    constructor(symbol, value, image) {
-        this.symbolName = symbolName;
+    constructor(face, value, image) {
+        this.faceName = faceName;
         this.valueName = valueName;
         this.imageNameURLFilePath = imageNameURLFilePath;
     }
-    set symbolName(newsymbolName) {
-        this._symbolName = newsymbolName;
+    set name(faceName) {
+        this._faceName = faceName;
     }
     get symbolName() {
-        return this._symbolName;
+        return this._faceName;
     }
     set valueName(newvalueName) {
         return this._valueName;
@@ -24,13 +24,17 @@ class Face {
             this._imageNameURLFilePath = [6];
         }
     }
-
     get imageNameURLFilePath(){
         return this._imageNameURLFilePath;
     }
 }
 
-module.exports = Face
+let testFunction = new function(){
+
+}
+
+module.exports = Face;
+module.exports
 
 
 
